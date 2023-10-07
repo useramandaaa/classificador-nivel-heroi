@@ -1,20 +1,23 @@
 let nomeHeroi = "SuperMands"
-let nivelXP = 10500
+let pontosXP = 10500
+let nivelHeroi;
 
-if(nivelXP <= 1000){
-    console.log("O Herói " + nomeHeroi + " está no nível Ferro")
-}else if(nivelXP > 1000 && nivelXP<= 2000){
-    console.log("O Herói " + nomeHeroi + " está no nível Bronze")
-}else if(nivelXP > 2000 && nivelXP <= 5000){
-    console.log("O Herói " + nomeHeroi + " está no nível Prata")
-}else if(nivelXP > 5000 && nivelXP <= 7000){
-    console.log("O Herói " + nomeHeroi + " está no nível Ouro")
-}else if(nivelXP > 7000 && nivelXP <= 8000){
-    console.log("O Herói " + nomeHeroi + " está no nível Platina")
-}else if(nivelXP > 8000 && nivelXP <= 9000){
-    console.log("O Herói " + nomeHeroi + " está no nível Ascendente")
-}else if(nivelXP > 9000 && nivelXP <= 10000){
-    console.log("O Herói " + nomeHeroi + " está no nível Imortal")
+if(pontosXP <= 1000){
+    nivelHeroi = "Ferro"
+}else if(pontosXP > 1000 && pontosXP <= 2000){
+    nivelHeroi =  "Bronze"
+}else if(pontosXP > 2000 && pontosXP <= 5000){
+    nivelHeroi = "Prata"
+}else if(pontosXP > 5000 && pontosXP <= 7000){
+    nivelHeroi = "Ouro"
+}else if(pontosXP > 7000 && pontosXP <= 8000){
+    nivelHeroi = "Platina"
+}else if(pontosXP > 8000 && pontosXP <= 9000){
+    nivelHeroi = "Ascendente"
+}else if(pontosXP > 9000 && pontosXP <= 10000){
+    nivelHeroi = "Imortal"
 }else{
-    console.log("O Herói " + nomeHeroi + " está no nível Radiante")
+    nivelHeroi = "Radiante"
 }
+
+console.log("O Herói " + nomeHeroi + " está no nível " + nivelHeroi)
